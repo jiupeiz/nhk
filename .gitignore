@@ -2,4 +2,5 @@
 *.txt
 100.py
 __pycache__
+*.pyc
 *.json
