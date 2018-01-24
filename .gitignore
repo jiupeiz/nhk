@@ -1,4 +1,5 @@
 # .gitignore
 *.txt
 100.py
+__pycache__
 *.json
