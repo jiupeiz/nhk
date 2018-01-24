@@ -1,0 +1,4 @@
+# .gitignore
+*.txt
+100.py
+*.json
