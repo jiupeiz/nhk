@@ -11,7 +11,6 @@ tps_val = get_template_value(country_text)
 for k, v in tps_val.items():
     plant_val = re.sub(r"'{2,5}", r"", v)
     plant_val = re.sub(r"\[{2}(.*?)\]{2}", r"\1", plant_val)
-    plant_val = plant_val.split("|")[0].split("#")[0]
     plant_val = re.sub(r"\{{2}(.*?)\}{2}", r"\1", plant_val)
     plant_val = re.sub(r"\(.*?\)", r"", plant_val)
     plant_val = re.sub(r"<.*?>", r"", plant_val)
