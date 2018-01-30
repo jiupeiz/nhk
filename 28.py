@@ -15,4 +15,5 @@ for k, v in tps_val.items():
     plant_val = re.sub(r"\(.*?\)", r"", plant_val)
     plant_val = re.sub(r"<.*?>", r"", plant_val)
     plant_val = re.sub(r"\[.*?\]", r"", plant_val)
+    plant_val = re.sub(r"lang\|\w{2}\|", r"", plant_val)
     print(k + "\t" + plant_val)
