@@ -9,6 +9,10 @@ class Morph:
         self.pos = pos
         self.pos1 = pos1
 
+    def __str__(self):
+        return 'surface: {}\tbase: {}\tpos: {}\tpos1: {}'\
+                .format(self.surface, self.base, self.pos, self.pos1)
+
 
 def get_morphs(filename):
     with open(filename) as f:
@@ -31,5 +35,4 @@ def get_morphs(filename):
 if __name__ == '__main__':
     docu = get_morphs("./neko.txt.cabocha")
     for word in docu[2]:
-        print('surface: {}\tbase: {}\tpos: {}\tpos1: {}'
-              .format(word.surface, word.base, word.pos, word.pos1))
+        print(word)
